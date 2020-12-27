@@ -15,6 +15,6 @@ spec:
       containers:
         - name: client
         # here kumarvdocker/multi-client is not working, need a fix for this
-          image: stephengrider/multi-client
+          image: stephengrider/multi-client:latest
           ports:
             - containerPort: 3000
