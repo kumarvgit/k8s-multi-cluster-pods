@@ -14,7 +14,9 @@ spec:
     spec:
       containers:
         - name: server
-          image: stephengrider/multi-server
+          # this is breaking on 27-12-2020
+          # image: stephengrider/multi-server
+          image: cygnetops/multi-server-pgfix-5-11
           ports:
             - containerPort: 5000
           env:
